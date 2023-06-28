@@ -1,0 +1,34 @@
+NTBTLS_VERSION="0.3.1"
+export ZOPEN_TARBALL_URL="https://gnupg.org/ftp/gcrypt/ntbtls/ntbtls-${NTBTLS_VERSION}.tar.bz2"
+export ZOPEN_TARBALL_DEPS="make bzip2 tar curl perl automake autoconf m4 sed gettext zoslib diffutils libgpgerror texinfo grep coreutils libksba libgcrypt"
+export ZOPEN_TYPE="TARBALL"
+
+zopen_check_results()
+{
+  dir="$1"
+  pfx="$2"
+  chk="$1/$2_check.log"
+
+  # Echo the following information to gauge build health
+  echo "actualFailures:0"
+  echo "totalTests:1"
+  echo "expectedFailures:0"
+  echo "expectedTotalTests:1"
+}
+
+zopen_append_to_env()
+{
+  # echo envars outside of PATH, MANPATH, LIBPATH
+}
+
+zopen_append_to_setup()
+{
+  # echo commands that will run when installing via setup.sh
+}
+
+zopen_get_version()
+{
+  # Modify to echo the version of your tool/library
+  # Rather than hardcoding the version, obtain the version by running the tool/library
+  echo "$NTBTLS_VERSION"
+}
