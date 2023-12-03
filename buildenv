@@ -1,7 +1,9 @@
+# bump: ntbtls-version /NTBTLS_VERSION="(.*)"/ https://gnupg.org/ftp/gcrypt/ntbtls/|re:/ntbtls-([\d.]+).tar.bz2/$1/|semver:*
 NTBTLS_VERSION="0.3.1"
-export ZOPEN_TARBALL_URL="https://gnupg.org/ftp/gcrypt/ntbtls/ntbtls-${NTBTLS_VERSION}.tar.bz2"
-export ZOPEN_TARBALL_DEPS="make bzip2 tar curl perl automake autoconf m4 sed gettext zoslib diffutils libgpgerror texinfo grep coreutils libksba libgcrypt"
-export ZOPEN_TYPE="TARBALL"
+
+export ZOPEN_BUILD_LINE="STABLE"
+export ZOPEN_STABLE_URL="https://gnupg.org/ftp/gcrypt/ntbtls/ntbtls-${NTBTLS_VERSION}.tar.bz2"
+export ZOPEN_STABLE_DEPS="make bzip2 tar curl perl automake autoconf m4 sed gettext zoslib diffutils libgpgerror texinfo grep coreutils libksba libgcrypt"
 
 zopen_check_results()
 {
@@ -28,7 +30,5 @@ zopen_append_to_setup()
 
 zopen_get_version()
 {
-  # Modify to echo the version of your tool/library
-  # Rather than hardcoding the version, obtain the version by running the tool/library
   echo "$NTBTLS_VERSION"
 }
