@@ -1,5 +1,5 @@
 # bump: ntbtls-version /NTBTLS_VERSION="(.*)"/ https://gnupg.org/ftp/gcrypt/ntbtls/|re:/ntbtls-([\d.]+).tar.bz2/$1/|semver:*
-NTBTLS_VERSION="0.3.1"
+NTBTLS_VERSION="0.3.2"
 
 export ZOPEN_BUILD_LINE="STABLE"
 export ZOPEN_STABLE_URL="https://gnupg.org/ftp/gcrypt/ntbtls/ntbtls-${NTBTLS_VERSION}.tar.bz2"
