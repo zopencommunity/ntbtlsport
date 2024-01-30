@@ -1,20 +1,20 @@
 diff --git a/configure b/configure
-index 8843e8e..6a73494 100755
+index 3f31bdd..1395b0e 100755
 --- a/configure
 +++ b/configure
-@@ -7299,6 +7299,10 @@ aix[4-9]*)
+@@ -8037,7 +8037,9 @@ case $host_os in
+ aix[4-9]*)
    lt_cv_deplibs_check_method=pass_all
    ;;
- 
+-
 +openedition)
 +  lt_cv_deplibs_check_method=pass_all
 +  ;;
-+
  beos*)
    lt_cv_deplibs_check_method=pass_all
    ;;
-@@ -14198,13 +14202,13 @@ $as_echo "$as_me: Use gpgrt-config with $gpgrt_libdir as gpg-error-config" >&6;}
-   fi
+@@ -15121,13 +15123,13 @@ printf "%s\n" "$as_me: Use gpgrt-config with $gpgrt_libdir as gpg-error-config"
+   ok=no
    if test "$GPG_ERROR_CONFIG" != "no"; then
      req_major=`echo $min_gpg_error_version | \
 -               sed 's/\([0-9]*\)\.\([0-9]*\)/\1/'`
