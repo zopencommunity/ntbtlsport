@@ -3,7 +3,7 @@ NTBTLS_VERSION="0.3.2"
 
 export ZOPEN_BUILD_LINE="STABLE"
 export ZOPEN_STABLE_URL="https://gnupg.org/ftp/gcrypt/ntbtls/ntbtls-${NTBTLS_VERSION}.tar.bz2"
-export ZOPEN_STABLE_DEPS="make bzip2 tar curl perl automake autoconf m4 sed gettext zoslib diffutils libgpgerror texinfo grep coreutils libksba libgcrypt"
+export ZOPEN_STABLE_DEPS="make bzip2 tar curl perl automake autoconf m4 sed gettext zoslib diffutils libgpgerror texinfo grep coreutils libksba libgcrypt openssl"
 
 zopen_check_results()
 {
